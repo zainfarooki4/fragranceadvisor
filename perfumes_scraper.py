@@ -46,7 +46,8 @@ def main():
             main_accords = tree.xpath("//div[@id='prettyPhotoGallery']/div/div/span/text()")
             if main_accords:
                 if "main accords" in main_accords:
-                    main_accords.remove("main accords")
+                    styles = main_accords.attrib.get("style")
+                    print(styles)
                 if "Videos" in main_accords:
                     main_accords.remove("Videos")
                 if "Pictures" in main_accords:
