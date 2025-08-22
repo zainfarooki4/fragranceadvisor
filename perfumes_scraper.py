@@ -64,7 +64,7 @@ def main():
                 middle_notes = tree.xpath("//p[b/text()='Middle Notes']/span[@class='rtgNote']/img")
                 base_notes = tree.xpath("//p[b/text()='Base Notes']/span[@class='rtgNote']/img")
                 if top_notes:
-                    notes["top"] = [top_note.get("title") for top_note in top_notes]
+                    notes["top "] = [top_note.get("title") for top_note in top_notes]
                 else:
                     notes["top"] = None
                 if middle_notes:
